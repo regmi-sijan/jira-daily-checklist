@@ -1,0 +1,24 @@
+{
+  "name": "jira-daily-checklist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal daily checklist that creates and updates Jira issues.",
+  "scripts": {
+    "build": "vite build",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@forge/api": "^8.4.0",
+    "@forge/bridge": "^7.2.1",
+    "@forge/kvs": "^2.1.1",
+    "@forge/resolver": "^2.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "overrides": {
+    "prosemirror-view": "^1.42.8"
+  }
+}

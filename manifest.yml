@@ -1,0 +1,21 @@
+modules:
+  jira:globalPage:
+    - key: daily-checklist-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Daily Checklist
+  function:
+    - key: resolver
+      handler: src/index.handler
+resources:
+  - key: main
+    path: static/main/build
+app:
+  runtime:
+    name: nodejs22.x
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - storage:app
